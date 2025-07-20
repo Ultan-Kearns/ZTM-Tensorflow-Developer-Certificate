@@ -203,7 +203,7 @@ def compare_historys(original_history, new_history, initial_epochs=5):
     val_loss = original_history.history["val_loss"]
 
     # Combine original history with new history
-    total_acc = acc + new_history.history["accuracy"]
+    total_acc = acc + new_history.history["acc"]
     total_loss = loss + new_history.history["loss"]
 
     total_val_acc = val_acc + new_history.history["val_accuracy"]
